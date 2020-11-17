@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
 @font-face {
   font-family: "Steelfish";
@@ -13,6 +14,10 @@
   font-weight: bold;
 }
 
+html, .contain-to-grid, .top-bar  {
+  background-color: #2b2b71 !important;
+}
+
 /*some basic settings */
 a {
   color: #F9CE06;
@@ -25,9 +30,21 @@ a:hover {
   color: #999;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+h1 {
+  text-transform: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1.logo {
+  max-width: 140px;
+}
+h1.logo img {
+  width: 140px;
 }
 
 .centered-text {
@@ -83,10 +100,6 @@ ul.shortcode-list i {
 
 #main.top-shift {
   margin-top: -100px;
-}
-
-.default_bkg {
-  background-color: #2b2b71;
 }
 
 /*Big social for demo 2 */
@@ -215,7 +228,7 @@ ul.shortcode-list i {
 }
 .top-bar .title-area .name h1 a {
   font-size: 2.57143rem;
-  color: #333;
+  color: #fff;
 }
 
 .contain-to-grid {
@@ -524,10 +537,6 @@ form input.error, form textarea.error {
   width: 97%;
 }
 
-.season1, .season2 {
-
-}
-
 /*Sidebar */
 .links {
   margin-bottom: 40px;
@@ -592,7 +601,7 @@ form input.error, form textarea.error {
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  background: #34f2f2;
+  background: #F9CE06;
 }
 #footer input.email-address {
   padding: 5px 15px;
@@ -2545,8 +2554,6 @@ body {
 .modMasonryGallery ul.gallery li a p {
   color: #fff;
   font-size: 0.875rem;
-  max-width: 90%;
-  margin: 0 auto;
 }
 .modMasonryGallery ul.gallery li a:hover {
   overflow: hidden;
