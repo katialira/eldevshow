@@ -1,0 +1,111 @@
+---
+layout: default
+section_id: home
+works:
+  - image: images/episodios/eds_ep01.jpg
+    class: season1
+    title: Episodio 1
+    desc: "Bienvenidos a elDevShow"
+  - image: images/episodios/eds_ep02.jpg
+    class: season1
+    title: Episodio 2
+    desc: "Unos tacos de datos con el Chekos"
+  - image: images/episodios/eds_ep03.jpg
+    class: season1
+    title: Episodio 3
+    desc: "Hablemos netas con el Oscar Arzola"
+  - image: images/episodios/eds_ep04.jpg
+    class: season1
+    title: Episodio 4
+    desc: "Lu Salazar es programadora chilanga pero con acento norteÑo y master de Ruby on Rails"
+  - image: images/episodios/eds_ep05.jpg
+    class: season1
+    title: Episodio 5
+    desc: "Hablando de Docker y Kata containers con la Gloria Palma"
+  - image: images/episodios/eds_ep06.jpg
+    class: season1
+    title: Episodio 6
+    desc: "Nos toca hablar con la Valery Calderon de Python, aunque terminamos hablando de Blockchain"
+  - image: images/episodios/eds_ep07.jpg
+    class: season1
+    title: Episodio 7
+    desc: "Hablamos de diseño de estrategia con la Arianna Pacheco"
+  - image: images/episodios/eds_ep08.jpg
+    class: season1
+    title: Episodio 8
+    desc: "Hoy hablamos de Inteligencia artificial con el Rodo"
+  - image: images/episodios/eds_ep09.jpg
+    class: season1
+    title: Episodio 9
+    desc: "Cómo trabajar en Microsoft y educar a niños en todo el mundo al mismo tiempo con la Bea"
+  - image: images/episodios/eds_ep10.jpg
+    class: season1
+    title: Episodio 10
+    desc: "Top consejos para romperla en Europa con la Tania desde Manchester"
+  - image: images/episodios/eds_ep11.jpg
+    class: season1
+    title: Episodio 11
+    desc: "Cómo vivir en Tijuana y trabajar como developer siendo autodidacta con el Yisus"
+  - image: images/episodios/eds_ep12.jpg
+    class: season1
+    title: Episodio 12
+    desc: "Cómo ser papá luchón y mudarte a Canadá como desarrollador móvil con el Pinedax"
+  - image: images/episodios/eds_ep13.jpg
+    class: season2
+    title: Episodio 13
+    desc: "¿Qué onda con el RH en las startups? con la Gaby"
+  - image: images/episodios/eds_ep14.jpg
+    class: season2
+    title: Episodio 14
+    desc: "Cómo sacar una visa de trabajo para ganar en dólares en el gabacho con el Dani Lopez"
+  - image: images/episodios/eds_ep15.jpg
+    class: season2
+    title: Episodio 15
+    desc: "¿Los desarrolladores se pueden convertir en emprendedores? con el Erik"
+  - image: images/episodios/eds_ep16.jpg
+    class: season2
+    title: Episodio 16
+    desc: "Trabajo remoto e historias de éxito con el Osw"
+  - image: images/episodios/eds_ep17.jpg
+    class: season2
+    title: Episodio 17
+    desc: "Cómo mezclar educación presencial con educación online con el Mike Nieva"
+  - image: images/episodios/eds_ep18.jpg
+    class: season2
+    title: Episodio 18
+    desc: "Comunidad, educación y cómo ser Youtuber educativo con Leonidas Esteban"
+  - image: images/episodios/eds_ep19.jpg
+    class: season2
+    title: Episodio 19
+    desc: "Cómo volverse mexicana y Developer al mismo tiempo con la Ilham Moutaharik"
+  - image: images/episodios/eds_ep20.jpg
+    class: season2
+    title: Episodio 20
+    desc: "cómo sobrevivir la transición de ser webMaster a guru de la programación con el Claudio"
+  - image: images/episodios/eds_ep21.jpg
+    class: season2
+    title: Episodio 21
+    desc: "Hoy toca charlar con Rihan quien es líder en Facebook DevCircles y master en inteligencia emocional"
+  - image: images/episodios/eds_ep22.jpg
+    class: season2
+    title: Episodio 22
+    desc: "Final de temporada con el Kike Díaz fundador de Dev.f"
+---
+
+<div class='mod modMasonryGallery'>
+  <ul class='gallery'>
+    {% for work in page.works %}
+      <li class='{{work.class}}'>
+        <a href='portfolio-item.html'>
+          <img alt="" src="{{work.image}}" />
+          <div class='overlay'>
+            <div class='thumb-info'>
+              <h3>{{work.title}}</h3>
+              <p>{{work.desc}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
