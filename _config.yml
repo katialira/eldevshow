@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   por eso entrevistamos a gente bien chingona en la comunidad de devs
   para inspirarnos y aprender de ellos, Si tú también te estas
   construyendo una carrera como dev; este podcast es para ti.
-baseurl: "/eldevshow" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: elDevShow
 github_username:  jekyll
